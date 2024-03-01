@@ -1,7 +1,7 @@
 <template>
     <header class="w-full fixed  top-0  bg-primary-color h-20 rounded-b-lg flex flex-row justify-between border-b-2 border-secondary-color">
          <router-link to="/" >
-        <h1 class="mt-6 ml-10">Duidelijkheid.com</h1>
+        <img :src="imageSrc" class="object-cover h-18 w-24 ml-4 ">
          </router-link>
         <NavBar @click="$emit('menu-icon-clicked')" class="mt-4 " />
     </header> 
@@ -17,7 +17,7 @@ export default {
     },
 data() {
     return {
-        logo: "@/assets/logo.png",
+         imageSrc: 'src/images/logo.png'
     };
 },
 
