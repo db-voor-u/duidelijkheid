@@ -17,7 +17,7 @@ export default {
     },
 data() {
     return {
-        logo: "src/assets/logo.png",
+        logo: "@/assets/logo.png",
     };
 },
 
