@@ -93,7 +93,7 @@ export default {
    methods: {
         downloadPdf() {
             const link = document.createElement('a');
-            link.href = '/src/assets/taxi.pdf'; // Update dit met het werkelijke pad naar je PDF
+            link.href = 'src/assets/taxi.pdf'; // Update dit met het werkelijke pad naar je PDF
             link.download = 'taxi.pdf'; // Optionele downloadnaam voor het bestand
             document.body.appendChild(link);
             link.click();
