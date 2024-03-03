@@ -39,7 +39,7 @@
     <br>
       <div class="max-w-lg mx-auto">
         <img 
-          :src="taxi" 
+          src="../assets/taxi.jpeg" 
           alt="taxifoto"
           class="w-full h-auto object-contain"
         />
@@ -47,7 +47,7 @@
       <br>
           <div class="max-w-lg mx-auto">
             <img 
-              :src="taxivoorbeeld1" 
+              src="../assets/taxivoorbeeld1.jpeg" 
               alt="taxifoto"
               class="w-full h-auto object-contain"
             />
@@ -55,7 +55,7 @@
           <br>
               <div class="max-w-lg mx-auto">
                 <img 
-                  :src="taxivoorbeeld2" 
+                  src="../assets/taxivoorbeeld2.jpeg" 
                   alt="taxifoto"
                   class="w-full h-auto object-contain"
                 />
@@ -85,9 +85,7 @@
 export default {
   data() {
         return {
-            taxi: "src/assets/taxi.jpeg",
-            taxivoorbeeld1: "src/assets/taxivoorbeeld1.jpeg",
-            taxivoorbeeld2: "src/assets/taxivoorbeeld2.jpeg",
+           
 
         };
  

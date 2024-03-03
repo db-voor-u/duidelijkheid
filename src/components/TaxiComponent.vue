@@ -2,7 +2,7 @@
 <div class="border p-4 rounded-lg hover:shadow-lg cursor-pointer text-center">
      <h2 class="font-bold text-xl">Taxi</h2>
     <img
-        :src="taxi"
+        src="../assets/taxi.jpeg"
         class="h-auto w-auto object-cover p-4 ">
   
    
@@ -18,7 +18,7 @@
 export default {
     data() {
         return {
-            taxi: "src/assets/taxi.jpeg"
+            
           
         }
     },
