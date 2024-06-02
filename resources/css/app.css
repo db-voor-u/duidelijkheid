@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+
+:root {
+    --primary-color: #db1de6;
+    --secondary-color: #0ff749;
+    --accent-color: #40e0d0;
+
+
+}
