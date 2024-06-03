@@ -49,7 +49,7 @@ class PostMakeResource extends Resource
                 )->columns(2),
                 Section::make('Content')->schema(
                     [
-                        FileUpload::make('image')->image()->required()
+                        FileUpload::make('image')->image()
                         ->directory('posts/thumbnails')
                         ->imageEditor()
                         ->maxSize(212288)
