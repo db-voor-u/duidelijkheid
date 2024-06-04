@@ -35,7 +35,7 @@ class PostMake extends Model
         return Str::limit(strip_tags($this->body), 150);
     }
 
-    public function getThumbnailUrl()
+    public function getImageUrl()
     {
         $isUrl = str_contains($this->image, 'http');
         return $isUrl ? $this->image : Storage::url($this->image);
