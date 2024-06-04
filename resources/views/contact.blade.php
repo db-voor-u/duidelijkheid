@@ -37,7 +37,7 @@
 
     <p class="text-left mt-20"><strong class="text-xl">Geachte heer of mevrouw</strong> <br><br>We streven ernaar om binnen twee weken contact met u op te nemen. Ons team zet zich in om u zo snel mogelijk van dienst te zijn.</p><br>
     <h3>Met vriendelijke groet:</h3><br>
-    <h2 class="text-left font-bold text-2xl">Duidelijkheid </h2>
+    <h2 class="text-left font-bold text-2xl text-primary-color">Duidelijkheid </h2>
 </div>
 
        </main>
