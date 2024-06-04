@@ -11,7 +11,7 @@
 
         <div class="mb-10 max-w-6xl mx-auto">
             <div class="mb-16">
-                <h2 class="mt-16 mb-5 text-3xl text-neutral-700 font-bold ">Nieuwste blog</h2>
+                <h2 class="mt-16 mb-5 text-3xl text-neutral-700 font-bold ">Blog</h2>
                 <div class="">
                     <div class="grid grid-cols-3  gap-4 ">
                         @foreach ($featuredPosts as $post )
@@ -26,11 +26,11 @@
                 </div>
                 <a wire:navigate class="mt-10 block text-center text-lg text-neutral-700 font-semibold"
                     href="{{ route('posts.index')}}">Meer
-                    Berichten</a>
+                    blog</a>
             </div>
             <hr>
 
-            <h2 class="mt-16 mb-5 text-3xl  text-neutral-700 font-bold">Laatste blog</h2>
+            {{-- <h2 class="mt-16 mb-5 text-3xl  text-neutral-700 font-bold">Laatste blog</h2>
             <div class="w-full mb-5">
                 <div class="grid grid-cols-3 gap-10 ">
                     @foreach ($latestPosts as $post )
@@ -44,7 +44,7 @@
             </div>
             <a wire:navigate class="mt-10 block text-center text-lg text-neutral-700 font-semibold"
                 href="{{ route('posts.index')}}">Meer
-                Berichten</a>
+                Berichten</a> --}}
         </div>
 
 
