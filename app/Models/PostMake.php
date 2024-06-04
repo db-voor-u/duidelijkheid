@@ -38,6 +38,6 @@ class PostMake extends Model
     public function getImageUrl()
     {
         $isUrl = str_contains($this->image, 'http');
-        return $isUrl ? $this->image : Storage::url($this->image);
+        return $isUrl ? $this->image : Storage::disk($this->image);
     }
 }
