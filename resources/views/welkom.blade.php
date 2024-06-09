@@ -29,6 +29,9 @@
                     blog</a>
             </div>
             <hr>
+            <br>
+            <br>
+            <br>
 
             {{-- <h2 class="mt-16 mb-5 text-3xl  text-neutral-700 font-bold">Laatste blog</h2>
             <div class="w-full mb-5">

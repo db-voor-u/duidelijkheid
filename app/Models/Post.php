@@ -8,6 +8,8 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
+use App\Models\PdfFile;
+
 
 class Post extends Model
 {
@@ -24,6 +26,7 @@ class Post extends Model
         'body',
         'published_at',
         'featured',
+        'pdf_file',
 
     ];
 
@@ -84,6 +87,11 @@ class Post extends Model
     {
         $isUrl = str_contains($this->image, 'http');
         return $isUrl ? $this->image : Storage::url($this->image);
+    }
+
+    public function getPdfUrl()
+    {
+        return Storage::url($this->pdf_file);
     }
 
 

@@ -13,12 +13,12 @@
 
             @endif
         </div>
-        <div  class="flex items-center space-x-4 font-light ">
+        {{-- <div  class="flex items-center space-x-4 font-light ">
             <button class="{{ $sort === 'desc' ? 'text-neutral-900 border-b border-secondary-color' : 'text-neutral-500'}}  py-4"
             wire:click="setSort('desc')">Nieuwste</button>
             <button class="{{ $sort === 'asc' ? 'text-neutral-900 border-b border-secondary-color' : 'text-neutral-500'}}  py-4"
             wire:click="setSort('asc')">Oudste</button>
-        </div>
+        </div> --}}
     </div>
     <div class="py-4">
         @foreach ($this->posts as $post )

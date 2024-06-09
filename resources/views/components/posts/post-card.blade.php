@@ -10,6 +10,7 @@
     <div class="mt-3 flex flex-col justify-between flex-grow">
         <div>
             <h2 class="font-bold text-xl">{{$post->title}}</h2>
+            <br>
             <p class="mt-2 text-neutral-700">
                 {{$post->getExcerpt()}}
             </p>

@@ -22,6 +22,9 @@
                     <x-nav-link href="{{ route('contact') }}" :active="request()->routeIs('contact')">
                         {{ __('Contact') }}
                     </x-nav-link>
+                    <x-nav-link href="{{ route('makes.build') }}" :active="request()->routeIs('makes.build')">
+                        {{ __('PowerBy') }}
+                    </x-nav-link>
 
                 </div>
             </div>
@@ -62,6 +65,9 @@
             </x-responsive-nav-link>
             <x-responsive-nav-link href="{{ route('contact') }}" :active="request()->routeIs('contact')">
                 {{ __('Contact') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('makes.build') }}" :active="request()->routeIs('makes.build')">
+                {{ __('PowerBy') }}
             </x-responsive-nav-link>
         </div>
 

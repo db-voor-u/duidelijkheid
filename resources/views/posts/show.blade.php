@@ -31,17 +31,26 @@
                 <div class="article-content prose py-3 text-gray-800 text-lg text-justify">
                    {!! $post->body !!}
                 </div>
+                <br>
+                @if ($post->pdf_file != null)
+                    <form action="{{ asset('storage/' . $post->pdf_file) }}" method="GET" target="_blank" >
+                        @csrf
+                        <x-button type="submit" class="justify-center items-center">Download pdf bestand</x-button>
+                    </form>
 
-                <div class="flex items-center space-x-4 mt-10">
-                    @foreach ($post->categories as $category)
-                    <x-posts.category-badge :category="$category" />
+                @else
+                {{-- <p>Geen bestand beschikbaar</p> --}}
 
+                @endif
 
-                   @endforeach
-                </div>
+            </div>
+
 
 
 <livewire:post-comments :key="'comments'.$post->id" :post="$post" />
+    <div class=" flex justify-center">
+        <x-button wire:navigate href="{{ route('makes.build') }}" class=" justify-center items-center" >Terug naar overzicht</x-button>
+    </div>
             </article>
 
 

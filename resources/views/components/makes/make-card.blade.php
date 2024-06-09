@@ -8,7 +8,7 @@
             <h2 class="text-2xl font-semibold text-neutral-900 transition-colors">
                 {{ $postMake->title }}
             </h2>
-
+           <br>
             <p class="mt-2 text-neutral-700">
             {{ $postMake->getExcerpt() }}
             </p>

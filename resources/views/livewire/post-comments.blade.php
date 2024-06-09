@@ -5,7 +5,7 @@
 
 
     <h2 class="text-2xl font-semibold text-gray-900 mb-5">Reactie</h2>
-    <p>Bij reactie denk aan respect voor elkaar en taal gebruik.<br>Let op niet te grote reactie schrijven.<br>Bij meer vragen neem gerust <x-button wire:navigate href="{{route('contact')}}">  Contact </x-button> met ons op.</p>
+    <p>Bij reactie denk aan respect voor elkaar en taal gebruik.<br>Let op niet te grote reactie schrijven.<br>Bij meer vragen neem gerust <a wire:navigate href="{{route('contact')}}" class="underline text-blue-500">  Contact </a> met ons op.</p>
 
 <br>
     <textarea

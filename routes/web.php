@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', WelkomController::class)->name('welkom');
 Route::get('/blog',[PostController::class,'index'])->name('posts.index');
-
+Route::get('/pdf_file/download/{id}', [PostController::class, 'download'])->name('pdf_file.download');
 Route::get('/blog{post:slug}',[PostController::class,'show'])->name('posts.show');
 
 Route::get('/powerby',[PostMakeController::class,'index'])->name('makes.build');

@@ -17,6 +17,9 @@ class PostMakeController extends Controller
 
     public function show(PostMake $postMake)
     {
+
+        $postMakes = PostMake::simplePaginate(1);
+
         return view('makes.show',[
             'postMake' => $postMake
         ]

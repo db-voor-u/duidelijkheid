@@ -61,6 +61,12 @@ class PostResource extends Resource
                     ->imageEditor()
                     ->maxSize(212288)
                     ->label('Afbeelding')->columnSpanFull(),
+
+                    FileUpload::make('pdf_file')
+                    ->label('PDF File')
+                    ->directory('pdfs')
+                    ->acceptedFileTypes(['application/pdf']),
+
                     DateTimePicker::make('published_at')->nullable()->label('Gepubliceerd op'),
 
                     Select::make('user_id')
@@ -95,6 +101,9 @@ class PostResource extends Resource
                 ImageColumn::make('image')->label('Afbeelding'),
                 TextColumn::make('title')->sortable()->searchable()->label('Titel'),
                 TextColumn::make('slug')->sortable()->searchable(),
+             TextColumn::make('pdf_file')
+                    ->label('pdf file')
+                    ->url(fn ($record) => asset('storage/pdfs' . $record->file_path), true),
                 TextColumn::make('author.name')->sortable()->searchable()->label('Auteur'),
                 TextColumn::make('published_at')->date('Y-m-d')->sortable()->searchable()->label('Gepubliceerd op'),
                 TextColumn::make('featured')->label('Uitgelicht'),

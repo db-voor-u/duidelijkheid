@@ -11,8 +11,13 @@
         </div>
         <div>
 
-        </div>
+    <div class=" flex justify-center">
+        <x-button wire:navigate href="{{ route('makes.build') }}" class=" justify-center items-center" >Terug naar overzicht</x-button>
+    </div>
     </article>
+
+
+
 
 
 </x-app-layout>
