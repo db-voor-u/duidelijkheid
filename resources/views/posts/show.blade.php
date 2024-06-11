@@ -1,14 +1,14 @@
 <x-app-layout :title="$post->title">
 
             <article class="col-span-4 md:col-span-3 mt-10 mx-auto py-5 w-full" style="max-width:700px">
-                <img class="w-full my-2 rounded-lg" src="{{ $post->getThumbnailUrl()}}" alt="thumbnail">
+                <img class="md:w-32 lg:w-48 h-auto my-2 rounded-lg" src="{{ $post->getThumbnailUrl()}}" alt="thumbnail" >
                 <h1 class="text-4xl font-bold text-left text-gray-800">
                    {{ $post->title}}
                 </h1>
                 <div class="mt-2 flex justify-between items-center">
                     <div class="flex py-5 text-base items-center">
                         <x-posts.author :author="$post->author" />
-                        <span class="text-gray-500 text-sm">| {{$post->getReadingTime()}} lezen</span>
+                        {{-- <span class="text-gray-500 text-sm">| {{$post->getReadingTime()}} lezen</span> --}}
                     </div>
                     <div class="flex items-center">
                         <x-delen-knop/>

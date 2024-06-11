@@ -1,7 +1,7 @@
 <x-app-layout :title="$postMake->title">
 
     <article class="col-span-4 md:col-span-3 mt-10 mx-auto py-5 w-full" style="max-width:700px">
-        <img class="w-full my-2 rounded-lg" src="{{ $postMake->getImageUrl()}}" alt="thumbnail">
+        <img class="w-80 h-auto my-2 rounded-lg" src="{{ $postMake->getImageUrl()}}" alt="thumbnail" width="500" height="300">
         <h1 class="text-4xl font-bold text-left text-gray-800">
            {{ $postMake->title}}
         </h1>
