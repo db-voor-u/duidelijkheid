@@ -41,6 +41,8 @@
         <h2>Het Team van <strong>Duidelijkheid.com</strong></h2>
 
     </div>
+    <div class="max-w-3xl mx-auto  ">
+    <img class=" object-fit h-auto rounded-lg mt-10" src="{{ asset('images/heroimage.jpeg') }}" alt="hero" ></div>
 @endsection
 
         <div class="mb-10 max-w-6xl mx-auto">
