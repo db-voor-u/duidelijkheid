@@ -6,7 +6,7 @@
            {{ $postMake->title}}
         </h1>
 
-        <div class="article-content prose py-3 text-gray-800 text-lg text-justify">
+        <div class="article-content prose py-3 text-gray-800 text-lg text-justify" >
            {!! $postMake->body !!}
         </div>
         <div>
@@ -21,3 +21,4 @@
 
 
 </x-app-layout>
+
