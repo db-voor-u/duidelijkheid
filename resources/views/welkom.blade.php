@@ -1,12 +1,15 @@
 <x-app-layout title="Welkom">
 @section('hero')
-    <div class="max-w-5xl text-left mx-auto mt-20 text-neutral-900  px-6">
+    <div class="max-w-3xl text-left mx-auto mt-20 text-neutral-900  px-6">
         <h1 class="text-2xl  text-center font-bold">
             Welkom bij duidelijkheid.com
 
 
         </h1>
         <br>
+        <div class="max-w-3xl mx-auto px-6 ">
+            <img class=" object-fit h-auto rounded-lg mt-10" src="{{ asset('images/heroimage.jpeg') }}" alt="hero"></div>
+            <br>
         <h2 class="font-bold">Beste bezoekers,</h2>
         <p>Welkom op Duidelijkheid.com. Hier vindt u gratis materialen die informatie duidelijker maken voor iedereen met autisme, hun verzorgers, leerkrachten, en chauffeurs die ondersteuning bieden aan mensen met autisme. Wij bieden handige en duidelijke hulpmiddelen. Duidelijkheid.com is een organisatie zonder winstoogmerk.</p> <br>
         <h2 class="font-bold">Rust voor het Brein</h2>
@@ -41,8 +44,7 @@
         <h2>Het Team van <strong>Duidelijkheid.com</strong></h2>
 
     </div>
-    <div class="max-w-3xl mx-auto px-6 ">
-    <img class=" object-fit h-auto rounded-lg mt-10" src="{{ asset('images/heroimage.jpeg') }}" alt="hero" ></div>
+
 @endsection
 
         <div class="mb-10 max-w-6xl mx-auto">
