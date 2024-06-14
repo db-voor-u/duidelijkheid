@@ -1,6 +1,6 @@
 <x-app-layout title="Welkom">
 @section('hero')
-    <div class="max-w-5xl text-left mx-auto mt-20 text-neutral-900 ">
+    <div class="max-w-5xl text-left mx-auto mt-20 text-neutral-900  px-6">
         <h1 class="text-2xl  text-center font-bold">
             Welkom bij duidelijkheid.com
 
@@ -41,7 +41,7 @@
         <h2>Het Team van <strong>Duidelijkheid.com</strong></h2>
 
     </div>
-    <div class="max-w-3xl mx-auto  ">
+    <div class="max-w-3xl mx-auto px-6 ">
     <img class=" object-fit h-auto rounded-lg mt-10" src="{{ asset('images/heroimage.jpeg') }}" alt="hero" ></div>
 @endsection
 
