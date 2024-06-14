@@ -7,8 +7,8 @@
 
         </h1>
         <br>
-        <div class="max-w-3xl mx-auto px-6 ">
-            <img class=" object-fit h-auto rounded-lg mt-10" src="{{ asset('images/heroimage.jpeg') }}" alt="hero"></div>
+        <div class="max-w-2xl mx-auto px-6 ">
+            <img class=" object-fit  rounded-lg mt-10" src="{{ asset('images/heroimage.jpeg') }}" alt="hero"></div>
             <br>
         <h2 class="font-bold">Beste bezoekers,</h2>
         <p>Welkom op Duidelijkheid.com. Hier vindt u gratis materialen die informatie duidelijker maken voor iedereen met autisme, hun verzorgers, leerkrachten, en chauffeurs die ondersteuning bieden aan mensen met autisme. Wij bieden handige en duidelijke hulpmiddelen. Duidelijkheid.com is een organisatie zonder winstoogmerk.</p> <br>
